@@ -1,0 +1,21 @@
+LocalPrint 0.1.0
+Free software, GPL-2.0-only. No advertisements, accounts or analytics.
+
+The Java SPL/QPDL encoder is derived from OpenPrinting SpliX:
+Copyright (C) 2006-2008 Aurélien Croc (AP²C) and contributors.
+https://github.com/OpenPrinting/splix
+Upstream revision: 7a802180c7b50802aaa16bbd2b3e326237286730
+Files used as protocol/algorithm references: src/qpdl.cpp, src/algo0x11.cpp,
+src/compress.cpp, src/printer.cpp, ppd/*.ppd.
+
+SpliX model parameters are bundled as data profiles. Download URLs are pinned
+to an upstream revision; SHA-256 is checked before profile import.
+PPD commands and cupsFilter executables are never executed.
+
+The complete corresponding LocalPrint source accompanies this APK in the
+LocalPrint-0.1.0-source.zip archive. COPYING contains the GPL version 2.
+There is no warranty; see COPYING for the full terms.
+
+Supports monochrome SPL/QPDL compression 0x11, PCL 5 raster, PostScript Level 2
+and PDF Direct. Other SPL compression variants, proprietary GDI/CAPT, PCL XL,
+colour output and hardware status reporting are not implemented.

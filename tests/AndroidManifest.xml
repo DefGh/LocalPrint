@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="org.localprint.tests">
+    <uses-sdk android:minSdkVersion="26" android:targetSdkVersion="36" />
+    <application android:label="LocalPrint QA" android:allowBackup="false" />
+    <instrumentation android:name="org.localprint.android.AndroidProbe" android:targetPackage="org.localprint" android:functionalTest="true" />
+    <instrumentation android:name="org.localprint.android.UiSnapshotProbe" android:targetPackage="org.localprint" android:functionalTest="true" />
+    <instrumentation android:name="org.localprint.android.DiscoveryProbe" android:targetPackage="org.localprint" android:functionalTest="true" />
+</manifest>

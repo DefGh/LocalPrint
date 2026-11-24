@@ -1,0 +1,302 @@
+[
+  {
+    "name": "Samsung ML-1510",
+    "id": "spl-samsung-ml-1510",
+    "sha256": "54d8024c005492232b78334825941ececfb55aa56c3704f3d74ac15edf4943e0",
+    "url": "https://raw.githubusercontent.com/OpenPrinting/splix/7a802180c7b50802aaa16bbd2b3e326237286730/ppd/ml1510.ppd"
+  },
+  {
+    "name": "Samsung ML-1520",
+    "id": "spl-samsung-ml-1520",
+    "sha256": "9c40824ff87ef1f46879b76a794dfb134bc4dbf8887894f134efc5fd35e7c3f3",
+    "url": "https://raw.githubusercontent.com/OpenPrinting/splix/7a802180c7b50802aaa16bbd2b3e326237286730/ppd/ml1520.ppd"
+  },
+  {
+    "name": "Samsung ML-1610",
+    "id": "spl-samsung-ml-1610",
+    "sha256": "fcfd5552b1401389fc8abb20178126f13356ed2d07dfade781cc539316f4f527",
+    "url": "https://raw.githubusercontent.com/OpenPrinting/splix/7a802180c7b50802aaa16bbd2b3e326237286730/ppd/ml1610.ppd"
+  },
+  {
+    "name": "Samsung ML-1630",
+    "id": "spl-samsung-ml-1630",
+    "sha256": "441523116baf835599d04a76cd87b685b720b24988801ea2eb15f9c6d8f085dd",
+    "url": "https://raw.githubusercontent.com/OpenPrinting/splix/7a802180c7b50802aaa16bbd2b3e326237286730/ppd/ml1630.ppd"
+  },
+  {
+    "name": "Samsung ML-1640",
+    "id": "spl-samsung-ml-1640",
+    "sha256": "c39317634a93a13b8e381480714685e73bcd8000b816cb9b17a99c702986f52d",
+    "url": "https://raw.githubusercontent.com/OpenPrinting/splix/7a802180c7b50802aaa16bbd2b3e326237286730/ppd/ml1640.ppd"
+  },
+  {
+    "name": "Samsung ML-1660",
+    "id": "spl-samsung-ml-1660",
+    "sha256": "8e3dd5e79b2e1141d1036e1be9e2225a21e5fcf65bf2980c4654a25b896fca10",
+    "url": "https://raw.githubusercontent.com/OpenPrinting/splix/7a802180c7b50802aaa16bbd2b3e326237286730/ppd/ml1660.ppd"
+  },
+  {
+    "name": "Samsung ML-1710",
+    "id": "spl-samsung-ml-1710",
+    "sha256": "362d56c46307498c34e7624b647e138aee772e4aed1eb5b5bd4de531e78e3efa",
+    "url": "https://raw.githubusercontent.com/OpenPrinting/splix/7a802180c7b50802aaa16bbd2b3e326237286730/ppd/ml1710.ppd"
+  },
+  {
+    "name": "Samsung ML-1740",
+    "id": "spl-samsung-ml-1740",
+    "sha256": "bf8829d2b73c76bb5cc7488d2071be587b8e53a71490c1b41c7b6341504972b2",
+    "url": "https://raw.githubusercontent.com/OpenPrinting/splix/7a802180c7b50802aaa16bbd2b3e326237286730/ppd/ml1740.ppd"
+  },
+  {
+    "name": "Samsung ML-1750",
+    "id": "spl-samsung-ml-1750",
+    "sha256": "3db9f8a663bcbe65727346da65b6091c7f6c2648978ea986d37155c9d6b24ef8",
+    "url": "https://raw.githubusercontent.com/OpenPrinting/splix/7a802180c7b50802aaa16bbd2b3e326237286730/ppd/ml1750.ppd"
+  },
+  {
+    "name": "Samsung ML-1910",
+    "id": "spl-samsung-ml-1910",
+    "sha256": "1e86eb20ea4c1cb1d4cd0c2d2a93d59719b59449e89e8acf8214069e8e9aa3d6",
+    "url": "https://raw.githubusercontent.com/OpenPrinting/splix/7a802180c7b50802aaa16bbd2b3e326237286730/ppd/ml1910.ppd"
+  },
+  {
+    "name": "Samsung ML-1915",
+    "id": "spl-samsung-ml-1915",
+    "sha256": "a4ccddf2cd85bbd26207a4aa4aa08b48ba3a2957f5445fefece9a8e71dd24abc",
+    "url": "https://raw.githubusercontent.com/OpenPrinting/splix/7a802180c7b50802aaa16bbd2b3e326237286730/ppd/ml1915.ppd"
+  },
+  {
+    "name": "Samsung ML-2010",
+    "id": "spl-samsung-ml-2010",
+    "sha256": "b75470d3450c6643905edc045f0c007c5f27fb0bd31dbaacc445c598ed003ed6",
+    "url": "https://raw.githubusercontent.com/OpenPrinting/splix/7a802180c7b50802aaa16bbd2b3e326237286730/ppd/ml2010.ppd"
+  },
+  {
+    "name": "Samsung ML-2015",
+    "id": "spl-samsung-ml-2015",
+    "sha256": "00a8713e4af56c62f42024108d1f4c11ea456d2d087a0551fccb38b7aee5f62d",
+    "url": "https://raw.githubusercontent.com/OpenPrinting/splix/7a802180c7b50802aaa16bbd2b3e326237286730/ppd/ml2015.ppd"
+  },
+  {
+    "name": "Samsung ML-2150",
+    "id": "spl-samsung-ml-2150",
+    "sha256": "4d59f4341a5ee1797e007e278b81e83049accf1752e7abc9257a83e6b5b3ca6c",
+    "url": "https://raw.githubusercontent.com/OpenPrinting/splix/7a802180c7b50802aaa16bbd2b3e326237286730/ppd/ml2150.ppd"
+  },
+  {
+    "name": "Samsung ML-2240",
+    "id": "spl-samsung-ml-2240",
+    "sha256": "6ab48ea01eab22c39358edf5aa193494f6ea6f46d48fed315da9cc18d8f7d89e",
+    "url": "https://raw.githubusercontent.com/OpenPrinting/splix/7a802180c7b50802aaa16bbd2b3e326237286730/ppd/ml2240.ppd"
+  },
+  {
+    "name": "Samsung ML-2250",
+    "id": "spl-samsung-ml-2250",
+    "sha256": "94907e6cdcf433c66d16be6d7a2df87b353493a01bed7c38bf7390c41b90c65f",
+    "url": "https://raw.githubusercontent.com/OpenPrinting/splix/7a802180c7b50802aaa16bbd2b3e326237286730/ppd/ml2250.ppd"
+  },
+  {
+    "name": "Samsung ML-2251",
+    "id": "spl-samsung-ml-2251",
+    "sha256": "a72bbc024ee222f1a1e439832bfee4fda3ed18615ee8aa6285f75c663856b2f8",
+    "url": "https://raw.githubusercontent.com/OpenPrinting/splix/7a802180c7b50802aaa16bbd2b3e326237286730/ppd/ml2251.ppd"
+  },
+  {
+    "name": "Samsung ML-2510",
+    "id": "spl-samsung-ml-2510",
+    "sha256": "0b9eee249eb16cf6f88f1d9a64fc3cad83644dc85b55a8be422244c7af20b5e1",
+    "url": "https://raw.githubusercontent.com/OpenPrinting/splix/7a802180c7b50802aaa16bbd2b3e326237286730/ppd/ml2510.ppd"
+  },
+  {
+    "name": "Samsung ML-2525",
+    "id": "spl-samsung-ml-2525",
+    "sha256": "1c42aee6908ace44cca940850f0361642556e5ba6bd2adf9739bf2530eb982a3",
+    "url": "https://raw.githubusercontent.com/OpenPrinting/splix/7a802180c7b50802aaa16bbd2b3e326237286730/ppd/ml2525.ppd"
+  },
+  {
+    "name": "Samsung ML-2525W",
+    "id": "spl-samsung-ml-2525w",
+    "sha256": "5ce6657727e8cf4dc29235e68b66ff612f671b34e4fecaa6404a80074b0482f1",
+    "url": "https://raw.githubusercontent.com/OpenPrinting/splix/7a802180c7b50802aaa16bbd2b3e326237286730/ppd/ml2525w.ppd"
+  },
+  {
+    "name": "Samsung ML-2550",
+    "id": "spl-samsung-ml-2550",
+    "sha256": "e68a0ca50fce954aa254c6a7877b8e156fbf237fdcb86b6ebe2cec64a9fdc805",
+    "url": "https://raw.githubusercontent.com/OpenPrinting/splix/7a802180c7b50802aaa16bbd2b3e326237286730/ppd/ml2550.ppd"
+  },
+  {
+    "name": "Samsung ML-2571",
+    "id": "spl-samsung-ml-2571",
+    "sha256": "25edb9f170c0a51106f4264d7c101ab75893b0da4b7ca365df6ea4c0f3606338",
+    "url": "https://raw.githubusercontent.com/OpenPrinting/splix/7a802180c7b50802aaa16bbd2b3e326237286730/ppd/ml2571.ppd"
+  },
+  {
+    "name": "Samsung ML-2580",
+    "id": "spl-samsung-ml-2580",
+    "sha256": "3b46f70949c3cfb22e57246ff3bd3cdc238b78181b25f89e5223b4e4f5dfb3b9",
+    "url": "https://raw.githubusercontent.com/OpenPrinting/splix/7a802180c7b50802aaa16bbd2b3e326237286730/ppd/ml2580.ppd"
+  },
+  {
+    "name": "Samsung ML-2580N",
+    "id": "spl-samsung-ml-2580n",
+    "sha256": "090a8d16f324859ecb9023e99b3a7b9b099f8043e8aec96ae89bc93be73597ae",
+    "url": "https://raw.githubusercontent.com/OpenPrinting/splix/7a802180c7b50802aaa16bbd2b3e326237286730/ppd/ml2580n.ppd"
+  },
+  {
+    "name": "Samsung ML-3050",
+    "id": "spl-samsung-ml-3050",
+    "sha256": "36253b297b97bdce4a2dd9f6cc3800d93f421c8a1a87cd1f09b4335b03f0b04e",
+    "url": "https://raw.githubusercontent.com/OpenPrinting/splix/7a802180c7b50802aaa16bbd2b3e326237286730/ppd/ml3050.ppd"
+  },
+  {
+    "name": "Samsung ML-3051",
+    "id": "spl-samsung-ml-3051",
+    "sha256": "b69255a485e264dc15100898a6ba9e8988754b617ef97f398bcaa4c3f7e83d4d",
+    "url": "https://raw.githubusercontent.com/OpenPrinting/splix/7a802180c7b50802aaa16bbd2b3e326237286730/ppd/ml3051.ppd"
+  },
+  {
+    "name": "Samsung ML-3051ND",
+    "id": "spl-samsung-ml-3051nd",
+    "sha256": "22ceeb95ef22b3983c3742cf60e7f3219f5db6aa2a5a62c7d0598f7bcb78ea8b",
+    "url": "https://raw.githubusercontent.com/OpenPrinting/splix/7a802180c7b50802aaa16bbd2b3e326237286730/ppd/ml3051nd.ppd"
+  },
+  {
+    "name": "Samsung ML-3471ND",
+    "id": "spl-samsung-ml-3471nd",
+    "sha256": "dc452bac926d437cc25d4c55be63e6a73921fd0769fb1e6669c2e1d314c60ae3",
+    "url": "https://raw.githubusercontent.com/OpenPrinting/splix/7a802180c7b50802aaa16bbd2b3e326237286730/ppd/ml3471nd.ppd"
+  },
+  {
+    "name": "Samsung ML-3560",
+    "id": "spl-samsung-ml-3560",
+    "sha256": "cdabee9e78aab2e4780a49a20d68bb539bf9ae4865c9e6960bc512f9979eff6e",
+    "url": "https://raw.githubusercontent.com/OpenPrinting/splix/7a802180c7b50802aaa16bbd2b3e326237286730/ppd/ml3560.ppd"
+  },
+  {
+    "name": "Xerox Phaser 3115",
+    "id": "spl-xerox-phaser-3115",
+    "sha256": "514a0312cb0a51002bd2578dd3c1d0c299215387571f1f146a527d6130c52083",
+    "url": "https://raw.githubusercontent.com/OpenPrinting/splix/7a802180c7b50802aaa16bbd2b3e326237286730/ppd/ph3115.ppd"
+  },
+  {
+    "name": "Xerox Phaser 3116",
+    "id": "spl-xerox-phaser-3116",
+    "sha256": "b4b5b708316e95c2ee87badc80fed589d6ee442402035960b1e8aa979cac684c",
+    "url": "https://raw.githubusercontent.com/OpenPrinting/splix/7a802180c7b50802aaa16bbd2b3e326237286730/ppd/ph3116.ppd"
+  },
+  {
+    "name": "Xerox Phaser 3117",
+    "id": "spl-xerox-phaser-3117",
+    "sha256": "69faffb84ea01843fc0e2addaba2001e76feaa4e8a1b5a43c2932c3e9c9b9208",
+    "url": "https://raw.githubusercontent.com/OpenPrinting/splix/7a802180c7b50802aaa16bbd2b3e326237286730/ppd/ph3117.ppd"
+  },
+  {
+    "name": "Xerox Phaser 3120",
+    "id": "spl-xerox-phaser-3120",
+    "sha256": "f4dac278d80cae181af445107f84530f0e8ab0fcd16507171fc488c3bc64622c",
+    "url": "https://raw.githubusercontent.com/OpenPrinting/splix/7a802180c7b50802aaa16bbd2b3e326237286730/ppd/ph3120.ppd"
+  },
+  {
+    "name": "Xerox Phaser 3121",
+    "id": "spl-xerox-phaser-3121",
+    "sha256": "adab19caec1a36da7c8f8c7114bfcd67b7cdf8112bbd9cdb7b72bb51540d91c5",
+    "url": "https://raw.githubusercontent.com/OpenPrinting/splix/7a802180c7b50802aaa16bbd2b3e326237286730/ppd/ph3121.ppd"
+  },
+  {
+    "name": "Xerox Phaser 3122",
+    "id": "spl-xerox-phaser-3122",
+    "sha256": "4e3d737e014c68a680c9cc81524d56001fa8885100263d6cb3fbf034a1786de1",
+    "url": "https://raw.githubusercontent.com/OpenPrinting/splix/7a802180c7b50802aaa16bbd2b3e326237286730/ppd/ph3122.ppd"
+  },
+  {
+    "name": "Xerox Phaser 3124",
+    "id": "spl-xerox-phaser-3124",
+    "sha256": "1ebe128482dfcda1540c3f877c1c2f14d6e76f8d70f2054ae985f8c9f69b3cb5",
+    "url": "https://raw.githubusercontent.com/OpenPrinting/splix/7a802180c7b50802aaa16bbd2b3e326237286730/ppd/ph3124.ppd"
+  },
+  {
+    "name": "Xerox Phaser 3130",
+    "id": "spl-xerox-phaser-3130",
+    "sha256": "3895337a75596ddb4087babc87f1e00c5f3cf8a15042f131b9182bafa30ede8c",
+    "url": "https://raw.githubusercontent.com/OpenPrinting/splix/7a802180c7b50802aaa16bbd2b3e326237286730/ppd/ph3130.ppd"
+  },
+  {
+    "name": "Xerox Phaser 3140",
+    "id": "spl-xerox-phaser-3140",
+    "sha256": "a61adee5db5065dd0e971b6b57c1e2b658ffecb009e42353e77abdeafdb712e7",
+    "url": "https://raw.githubusercontent.com/OpenPrinting/splix/7a802180c7b50802aaa16bbd2b3e326237286730/ppd/ph3140.ppd"
+  },
+  {
+    "name": "Xerox Phaser 3150",
+    "id": "spl-xerox-phaser-3150",
+    "sha256": "d4309c7ff4b558a42706581c035948714cb8aab4a66d00ae2d9c22cd2c989961",
+    "url": "https://raw.githubusercontent.com/OpenPrinting/splix/7a802180c7b50802aaa16bbd2b3e326237286730/ppd/ph3150.ppd"
+  },
+  {
+    "name": "Xerox Phaser 3155",
+    "id": "spl-xerox-phaser-3155",
+    "sha256": "75ae45583c4360f61ca08db9f837b4463395b0e24301fda39fb29d12d3575682",
+    "url": "https://raw.githubusercontent.com/OpenPrinting/splix/7a802180c7b50802aaa16bbd2b3e326237286730/ppd/ph3155.ppd"
+  },
+  {
+    "name": "Xerox Phaser 3160",
+    "id": "spl-xerox-phaser-3160",
+    "sha256": "bf828059c25fa837f0a01c3c85d6036eef28d1e37ee1727458fcd7ded5e70011",
+    "url": "https://raw.githubusercontent.com/OpenPrinting/splix/7a802180c7b50802aaa16bbd2b3e326237286730/ppd/ph3160.ppd"
+  },
+  {
+    "name": "Xerox Phaser 3420",
+    "id": "spl-xerox-phaser-3420",
+    "sha256": "fd18cb2f637b891cbfe3f2a17c4f17105c92663aa340f372f865f025279cd701",
+    "url": "https://raw.githubusercontent.com/OpenPrinting/splix/7a802180c7b50802aaa16bbd2b3e326237286730/ppd/ph3420.ppd"
+  },
+  {
+    "name": "Xerox Phaser 3425",
+    "id": "spl-xerox-phaser-3425",
+    "sha256": "56934d2df3352931fd179b2b918761e4db1630f4247e023f26b74d6b435a1073",
+    "url": "https://raw.githubusercontent.com/OpenPrinting/splix/7a802180c7b50802aaa16bbd2b3e326237286730/ppd/ph3425.ppd"
+  },
+  {
+    "name": "Xerox Phaser 5500",
+    "id": "spl-xerox-phaser-5500",
+    "sha256": "7db0f253fa88cc824cf28a1f95c04c6790c8417afd948940882adbe074f22f6e",
+    "url": "https://raw.githubusercontent.com/OpenPrinting/splix/7a802180c7b50802aaa16bbd2b3e326237286730/ppd/ph5500.ppd"
+  },
+  {
+    "name": "Samsung SCX-3200",
+    "id": "spl-samsung-scx-3200",
+    "sha256": "630bbbff1ad192008a347481fea15d5eb3d677b2eb88a03fdb52567ca72b369e",
+    "url": "https://raw.githubusercontent.com/OpenPrinting/splix/7a802180c7b50802aaa16bbd2b3e326237286730/ppd/scx3200.ppd"
+  },
+  {
+    "name": "Samsung SCX-4600",
+    "id": "spl-samsung-scx-4600",
+    "sha256": "880df344c8cc152614c2172c30ac1e598700725960511a412e5017fafcc7e752",
+    "url": "https://raw.githubusercontent.com/OpenPrinting/splix/7a802180c7b50802aaa16bbd2b3e326237286730/ppd/scx4600.ppd"
+  },
+  {
+    "name": "Samsung SCX-4623f",
+    "id": "spl-samsung-scx-4623f",
+    "sha256": "b3db63e4825b3d70cc7b2c6ec925d887bc582814de16ba1b23226c06f16fdebf",
+    "url": "https://raw.githubusercontent.com/OpenPrinting/splix/7a802180c7b50802aaa16bbd2b3e326237286730/ppd/scx4623f.ppd"
+  },
+  {
+    "name": "Samsung SCX-4623fw",
+    "id": "spl-samsung-scx-4623fw",
+    "sha256": "4f504490e9ea68d186301c5452dd065d3d187bb6540782cbd18d5d60f293fefd",
+    "url": "https://raw.githubusercontent.com/OpenPrinting/splix/7a802180c7b50802aaa16bbd2b3e326237286730/ppd/scx4623fw.ppd"
+  },
+  {
+    "name": "Samsung SCX-5330N",
+    "id": "spl-samsung-scx-5330n",
+    "sha256": "ce0f902eaa57f146ffe849edac86c71636ed256fd7f25ccfcd209e9f710ca84c",
+    "url": "https://raw.githubusercontent.com/OpenPrinting/splix/7a802180c7b50802aaa16bbd2b3e326237286730/ppd/scx5330n.ppd"
+  },
+  {
+    "name": "Samsung SCX-5530FN",
+    "id": "spl-samsung-scx-5530fn",
+    "sha256": "145de66a83d9519777091be2ae857f60839b1a077d0af09df0c7cf314e506be5",
+    "url": "https://raw.githubusercontent.com/OpenPrinting/splix/7a802180c7b50802aaa16bbd2b3e326237286730/ppd/scx5530fn.ppd"
+  }
+]
