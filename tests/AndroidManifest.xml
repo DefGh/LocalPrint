@@ -5,4 +5,5 @@
     <instrumentation android:name="org.localprint.android.AndroidProbe" android:targetPackage="org.localprint" android:functionalTest="true" />
     <instrumentation android:name="org.localprint.android.UiSnapshotProbe" android:targetPackage="org.localprint" android:functionalTest="true" />
     <instrumentation android:name="org.localprint.android.DiscoveryProbe" android:targetPackage="org.localprint" android:functionalTest="true" />
+    <instrumentation android:name="org.localprint.android.SessionProbe" android:targetPackage="org.localprint" android:functionalTest="true" />
 </manifest>

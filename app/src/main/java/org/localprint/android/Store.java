@@ -55,4 +55,12 @@ public final class Store {
     }
     public void log(String message){prefs.edit().putString("lastJob",new java.text.SimpleDateFormat("dd.MM HH:mm",java.util.Locale.ROOT).format(new Date())+"\n"+message).apply();}
     public String lastJob(){return prefs.getString("lastJob","Заданий пока нет");}
+    public synchronized void serviceEvent(String message){
+        String entry=new java.text.SimpleDateFormat("dd.MM HH:mm:ss",java.util.Locale.ROOT).format(new Date())+" · "+message;
+        String history=entry+"\n"+prefs.getString("serviceHistory","");
+        if(history.length()>8000)history=history.substring(0,8000);
+        prefs.edit().putString("serviceHistory",history).apply();
+        android.util.Log.i("LocalPrint",message);
+    }
+    public String serviceHistory(){return prefs.getString("serviceHistory","Android ещё не запускал службу печати. Открой системный список принтеров, затем обнови этот журнал.");}
 }

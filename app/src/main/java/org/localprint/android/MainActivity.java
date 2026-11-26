@@ -80,7 +80,7 @@ public final class MainActivity extends Activity {
         LinearLayout intro=card();intro.addView(text(enabled()?"Служба печати включена":"Включи службу для печати",20,INK));
         intro.addView(text("После сохранения принтера включи LocalPrint в настройках. Сам документ отправляется из меню «Печать» нужного приложения.",14,MUTED));
         intro.addView(button("Открыть настройки печати",()->startActivity(new Intent(Settings.ACTION_PRINT_SETTINGS))));
-        content.addView(text("Версия 0.1 · A4, A5, Letter, Legal · чёрно-белая печать · одна сторона. Данные отправляются в локальную сеть.",12,MUTED));
+        content.addView(text("Версия 0.1.1 · A4, A5, Letter, Legal · чёрно-белая печать · одна сторона. Данные отправляются в локальную сеть.",12,MUTED));
     }
     private EditText field(LinearLayout layout,String label,String value,int type){TextView caption=text(label,14,MUTED);layout.addView(caption);EditText e=new EditText(this);e.setTag(caption);e.setSingleLine(true);e.setInputType(type);e.setText(value);layout.addView(e,new LinearLayout.LayoutParams(-1,-2));return e;}
     private void edit(Store.Printer old,String name,String host,int port,String transport,String path,String selectedProfile){
@@ -151,7 +151,19 @@ public final class MainActivity extends Activity {
                 .setNegativeButton("Отмена",null).setPositiveButton("Установить",(d,w)->{try{store.installProfile(p);show(1);}catch(Exception e){error(e);}}).show();});
         }catch(Exception e){main.post(()->error(e));}});
     }
-    private void journal(){LinearLayout c=card();c.addView(text("Последнее задание",21,INK));c.addView(text(store.lastJob(),15,MUTED));c.addView(text("Статус «отправлено» означает, что данные переданы принтеру. У RAW нет универсального подтверждения выхода листа.",13,MUTED));content.addView(button("Обновить",()->show(2)));}
+    private void journal(){
+        LinearLayout c=card();c.addView(text("Последнее задание",21,INK));c.addView(text(store.lastJob(),15,MUTED));
+        c.addView(text("Статус «отправлено» означает, что данные переданы принтеру. У RAW нет универсального подтверждения выхода листа.",13,MUTED));
+        LinearLayout service=card();service.addView(text("Служба и системный список",21,INK));
+        service.addView(text("Служба "+(enabled()?"включена":"выключена")+" · сохранено принтеров: "+store.printers().size(),14,MUTED));
+        TextView history=text(store.serviceHistory(),13,MUTED);history.setTextIsSelectable(true);service.addView(history);
+        service.addView(button("Скопировать диагностику",()->{
+            android.content.ClipboardManager clipboard=(android.content.ClipboardManager)getSystemService(CLIPBOARD_SERVICE);
+            clipboard.setPrimaryClip(ClipData.newPlainText("LocalPrint", "Android "+Build.VERSION.RELEASE+" / "+Build.MANUFACTURER+" "+Build.MODEL+"\nСлужба включена: "+enabled()+"\nСохранено принтеров: "+store.printers().size()+"\n"+store.serviceHistory()));
+            Toast.makeText(this,"Диагностика скопирована",Toast.LENGTH_SHORT).show();
+        }));
+        content.addView(button("Обновить",()->show(2)));
+    }
     private void licenses(){try{TextView t=text(store.asset("NOTICE.txt"),13,INK);t.setPadding(dp(20),dp(8),dp(20),dp(8));t.setTextIsSelectable(true);ScrollView s=new ScrollView(this);s.addView(t);new AlertDialog.Builder(this).setTitle("LocalPrint · GPL-2.0").setView(s).setPositiveButton("Закрыть",null).show();}catch(Exception e){error(e);}}
     private void probe(Store.Printer p){
         worker.submit(()->{try(Socket socket=new Socket()){socket.connect(new InetSocketAddress(p.host,p.port),5000);main.post(()->{if(alive)new AlertDialog.Builder(this).setTitle("Связь есть").setMessage(p.host+":"+p.port+" отвечает. Теперь можно отправить документ через меню «Печать».").setPositiveButton("ОК",null).show();});}catch(Exception e){main.post(()->error(new IOException("Нет связи с "+p.host+":"+p.port+". Проверь сеть Wi-Fi и питание принтера.",e)));}});

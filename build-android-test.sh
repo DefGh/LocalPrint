@@ -6,7 +6,7 @@ BT="$PWD/.toolchain/android-16"
 AJ="$PWD/.toolchain/android-36/android.jar"
 mkdir -p build/instrumentation/classes build/instrumentation/dex
 "$BT/aapt2" link -o build/instrumentation/resources.apk --manifest tests/AndroidManifest.xml -I "$AJ"
-"$JDK_DIR/bin/javac" --release 8 -encoding UTF-8 -cp "$AJ:build/classes" -d build/instrumentation/classes tests/AndroidProbe.java tests/UiSnapshotProbe.java tests/DiscoveryProbe.java
+"$JDK_DIR/bin/javac" --release 8 -encoding UTF-8 -cp "$AJ:build/classes" -d build/instrumentation/classes tests/AndroidProbe.java tests/UiSnapshotProbe.java tests/DiscoveryProbe.java tests/SessionProbe.java
 "$JDK_DIR/bin/jar" cf build/instrumentation/classes.jar -C build/instrumentation/classes .
 "$JDK_DIR/bin/java" -cp "$BT/lib/d8.jar" com.android.tools.r8.D8 --min-api 26 --lib "$AJ" --classpath build/classes.jar --output build/instrumentation/dex build/instrumentation/classes.jar
 cp build/instrumentation/resources.apk build/instrumentation/test-unsigned.apk

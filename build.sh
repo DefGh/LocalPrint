@@ -28,6 +28,6 @@ if [ ! -f "$SIGNING_STORE" ]; then
     "$JDK_DIR/bin/keytool" -genkeypair -keystore "$SIGNING_STORE" -alias localprint -keyalg RSA -keysize 3072 -validity 10000 -storepass localprint-dev -keypass localprint-dev -dname 'CN=LocalPrint Development'
     chmod 600 "$SIGNING_STORE"
 fi
-"$JDK_DIR/bin/java" -jar "$BUILD_TOOLS/lib/apksigner.jar" sign --ks "$SIGNING_STORE" --ks-key-alias localprint --ks-pass pass:localprint-dev --key-pass pass:localprint-dev --out build/LocalPrint-0.1.0.apk build/localprint-aligned.apk
-"$JDK_DIR/bin/java" -jar "$BUILD_TOOLS/lib/apksigner.jar" verify --verbose build/LocalPrint-0.1.0.apk
-shasum -a 256 build/LocalPrint-0.1.0.apk > build/LocalPrint-0.1.0.apk.sha256
+"$JDK_DIR/bin/java" -jar "$BUILD_TOOLS/lib/apksigner.jar" sign --ks "$SIGNING_STORE" --ks-key-alias localprint --ks-pass pass:localprint-dev --key-pass pass:localprint-dev --out build/LocalPrint-0.1.1.apk build/localprint-aligned.apk
+"$JDK_DIR/bin/java" -jar "$BUILD_TOOLS/lib/apksigner.jar" verify --verbose build/LocalPrint-0.1.1.apk
+shasum -a 256 build/LocalPrint-0.1.1.apk > build/LocalPrint-0.1.1.apk.sha256

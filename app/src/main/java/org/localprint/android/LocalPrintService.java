@@ -15,8 +15,10 @@ public final class LocalPrintService extends PrintService {
     private final Map<PrintJob,Future<?>> futures=new HashMap<>();
     private final Map<PrintJob,ParcelFileDescriptor> descriptors=new HashMap<>();
     private Store store;
-    @Override public void onCreate(){super.onCreate();store=new Store(this);}
-    @Override protected PrinterDiscoverySession onCreatePrinterDiscoverySession(){return new Session();}
+    @Override public void onCreate(){super.onCreate();store=new Store(this);store.serviceEvent("Служба создана · Android "+Build.VERSION.RELEASE);}
+    @Override protected void onConnected(){super.onConnected();store.serviceEvent("Android подключился к службе");}
+    @Override protected void onDisconnected(){store.serviceEvent("Android отключился от службы");super.onDisconnected();}
+    @Override protected PrinterDiscoverySession onCreatePrinterDiscoverySession(){store.serviceEvent("Android запросил список принтеров");return new Session();}
     @Override protected void onPrintJobQueued(PrintJob job){
         Store.Printer printer=null;
         PrintJobInfo info=job.getInfo();
@@ -55,13 +57,13 @@ public final class LocalPrintService extends PrintService {
         private final Set<PrinterId> published=new HashSet<>();
         private final android.content.SharedPreferences prefs=getSharedPreferences("localprint",MODE_PRIVATE);
         private final android.content.SharedPreferences.OnSharedPreferenceChangeListener listener=(p,key)->{if("printers".equals(key)||"profiles".equals(key))publish();};
-        Session(){prefs.registerOnSharedPreferenceChangeListener(listener);}
+        Session(){prefs.registerOnSharedPreferenceChangeListener(listener);publish();}
         private void publish(){
             if(isDestroyed())return;
             List<PrinterInfo> all=new ArrayList<>();Set<PrinterId> current=new HashSet<>();
             for(Store.Printer p:store.printers()){
                 try{
-                    Profile profile=store.profile(p.profile);PrinterId id=generatePrinterId(p.id);current.add(id);
+                    Profile profile=store.profile(p.profile);PrinterId id=generatePrinterId(p.id);
                     PrinterCapabilitiesInfo.Builder caps=new PrinterCapabilitiesInfo.Builder(id)
                         .addMediaSize(PrintAttributes.MediaSize.ISO_A4,true).addMediaSize(PrintAttributes.MediaSize.NA_LETTER,false)
                         .addMediaSize(PrintAttributes.MediaSize.ISO_A5,false).addMediaSize(PrintAttributes.MediaSize.NA_LEGAL,false)
@@ -72,13 +74,22 @@ public final class LocalPrintService extends PrintService {
                     caps.addResolution(new PrintAttributes.Resolution("dpi"+dpi,dpi+" dpi",dpi,dpi),true);
                     all.add(new PrinterInfo.Builder(id,p.name,PrinterInfo.STATUS_IDLE)
                         .setDescription("LocalPrint · "+p.host+":"+p.port+" · "+profile.name).setCapabilities(caps.build()).build());
-                }catch(Exception ignored){}
+                    current.add(id);
+                }catch(Exception e){
+                    store.serviceEvent("Не удалось подготовить «"+p.name+"»: "+e.getClass().getSimpleName()+": "+e.getMessage());
+                    // A broken/missing profile must not silently hide a saved printer.
+                    PrinterId id=generatePrinterId(p.id);
+                    all.add(new PrinterInfo.Builder(id,p.name,PrinterInfo.STATUS_UNAVAILABLE)
+                        .setDescription("LocalPrint · проверь драйвер в приложении: "+e.getMessage()).build());
+                    current.add(id);
+                }
             }
             List<PrinterId> removed=new ArrayList<>(published);removed.removeAll(current);if(!removed.isEmpty())removePrinters(removed);
             if(!all.isEmpty())addPrinters(all);published.clear();published.addAll(current);
+            store.serviceEvent("Передано в Android: "+all.size()+" принтер(ов)");
         }
-        @Override public void onStartPrinterDiscovery(List<PrinterId> priorityList){publish();}
-        @Override public void onStopPrinterDiscovery(){}
+        @Override public void onStartPrinterDiscovery(List<PrinterId> priorityList){store.serviceEvent("Поиск в системном списке начат");publish();}
+        @Override public void onStopPrinterDiscovery(){store.serviceEvent("Поиск в системном списке остановлен");}
         @Override public void onValidatePrinters(List<PrinterId> ids){publish();}
         @Override public void onStartPrinterStateTracking(PrinterId id){publish();}
         @Override public void onStopPrinterStateTracking(PrinterId id){}
